@@ -1,0 +1,10 @@
+{
+  "name": "wanderchat-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd wanderchat-client && npm install && npm run build",
+    "build:server": "cd wanderchat-server && npm install && npm run build && mkdir -p public && cp -r ../wanderchat-client/dist/* public/",
+    "start": "cd wanderchat-server && npm start"
+  }
+}

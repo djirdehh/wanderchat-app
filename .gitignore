@@ -1,0 +1,13 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+
+# Environment variables
+.env
+.env.production
+
+# Editor files
+.DS_Store
+*.log
